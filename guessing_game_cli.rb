@@ -8,9 +8,9 @@ def run_guessing_game
 	user_input = gets.chomp
    binding.pry 
     if user_input == roll.to_s
-    	return "You guessed the correct number!"
+    	puts "You guessed the correct number!"
     elsif user_input != roll.to_s
-    	return "Sorry! The computer guessed #{roll}."
+    	puts "Sorry! The computer guessed #{roll}."
     elsif user_input == "exit"
       puts "Goodbye!"
     end 
